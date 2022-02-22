@@ -43,8 +43,6 @@ covid_deaths %>% #henter fra datasett
 
 lm(deaths_per_100k ~ fully_vaccinated_pct_of_pop, data = covid_deaths)
 
-lm(formula = deaths_per_100k ~ fully_vaccinated_pct_of_pop, data = covid_deaths)
-
 # "Intercept" viser hvor y-aksen skjæres når x = 0. 
 # I dette tilfellet betyr det at når vaksinasjonsraten er lik 0%, så dør 31,15 per 100 000 av covid i tidsperioden dataen er hentet fra. 
 # Dette er ikke emperiske tall, men et anslag gjort med regresjons-modellen.
